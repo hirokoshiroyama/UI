@@ -2,7 +2,6 @@ package com.example.ui
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -12,10 +11,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         button1.setOnClickListener {
-            Log.d("UI_PARTS", "ボタンをタップしました")
-        }
 
-        textView.text = "テキスト"
+            textView.text = editText.text.toString()
+        }
     }
 }
 
